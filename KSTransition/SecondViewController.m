@@ -10,6 +10,7 @@
 #import "KSTransition.h"
 @interface SecondViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tab;
+@property(nonatomic,strong)UIPercentDrivenInteractiveTransition *interactivePopTransition;
 @end
 
 @implementation SecondViewController
@@ -28,6 +29,38 @@
     self.view.backgroundColor=[UIColor redColor];
     
     [self setupUI];
+    /*
+     ** 加入手势交互过渡效果
+     */
+    UIScreenEdgePanGestureRecognizer *pop=[[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(popProgress:)];
+    pop.edges=UIRectEdgeLeft;
+    [self.view addGestureRecognizer:pop];
+}
+/*
+ ** 加入手势交互过渡效果
+ */
+-(void)popProgress:(UIScreenEdgePanGestureRecognizer *)popgest{
+    // 计算用户手指划了多远
+    CGFloat progress=[popgest translationInView:self.view].x/(self.view.bounds.size.width*1.0);
+    progress=MIN(1.0, MAX(0.0, progress));
+    
+    if (popgest.state==UIGestureRecognizerStateBegan) {
+        // 创建过渡对象，弹出viewController
+        self.interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+        [self.navigationController popViewControllerAnimated:YES];
+    }else if (popgest.state==UIGestureRecognizerStateChanged){
+        // 更新 interactive transition 的进度
+        [self.interactivePopTransition updateInteractiveTransition:progress];
+    }else if (popgest.state==UIGestureRecognizerStateCancelled||popgest.state==UIGestureRecognizerStateEnded){// 完成或者取消过渡
+        if (progress > 0.5) {
+            [self.interactivePopTransition finishInteractiveTransition];
+        }
+        else {
+            [self.interactivePopTransition cancelInteractiveTransition];
+        }
+        
+        self.interactivePopTransition = nil;
+    }
 }
 -(void)setupUI{
     UITableView *tableview=[[UITableView alloc]initWithFrame:self.view.bounds];
@@ -65,6 +98,13 @@
         return [[KSTransition alloc]initWithTransitionType:TransitionTypePush];
     }
     return [[KSTransition alloc]initWithTransitionType:TransitionTypePop];
-//    return nil;
+}
+-(id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
+    // 检查是否是我们的自定义过渡
+    if ([animationController isKindOfClass:[SecondViewController class]]) {
+        return self.interactivePopTransition;
+    }else {
+        return nil;
+    }
 }
 @end
