@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F70745C1E5D6B8E00680502 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F70745B1E5D6B8E00680502 /* main.m */; };
+		1F70745F1E5D6B8E00680502 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F70745E1E5D6B8E00680502 /* AppDelegate.m */; };
+		1F7074621E5D6B8E00680502 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7074611E5D6B8E00680502 /* ViewController.m */; };
+		1F7074651E5D6B8E00680502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7074631E5D6B8E00680502 /* Main.storyboard */; };
+		1F7074671E5D6B8E00680502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7074661E5D6B8E00680502 /* Assets.xcassets */; };
+		1F70746A1E5D6B8E00680502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7074681E5D6B8E00680502 /* LaunchScreen.storyboard */; };
+		1F7074751E5D6B8E00680502 /* KSTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7074741E5D6B8E00680502 /* KSTransitionTests.m */; };
+		1F7074801E5D6B8E00680502 /* KSTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F70747F1E5D6B8E00680502 /* KSTransitionUITests.m */; };
+		1F7074901E5D70C900680502 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F70748F1E5D70C900680502 /* SecondViewController.m */; };
+		1F7074961E5D774C00680502 /* KSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7074951E5D774C00680502 /* KSTransition.m */; };
+		1F7074991E5D7FDA00680502 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7074981E5D7FDA00680502 /* UIView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F7074711E5D6B8E00680502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F70744F1E5D6B8E00680502 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7074561E5D6B8E00680502;
+			remoteInfo = KSTransition;
+		};
+		1F70747C1E5D6B8E00680502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F70744F1E5D6B8E00680502 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7074561E5D6B8E00680502;
+			remoteInfo = KSTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F7074571E5D6B8E00680502 /* KSTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F70745B1E5D6B8E00680502 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F70745D1E5D6B8E00680502 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F70745E1E5D6B8E00680502 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F7074601E5D6B8E00680502 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F7074611E5D6B8E00680502 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F7074641E5D6B8E00680502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F7074661E5D6B8E00680502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F7074691E5D6B8E00680502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F70746B1E5D6B8E00680502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7074701E5D6B8E00680502 /* KSTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7074741E5D6B8E00680502 /* KSTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSTransitionTests.m; sourceTree = "<group>"; };
+		1F7074761E5D6B8E00680502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F70747B1E5D6B8E00680502 /* KSTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F70747F1E5D6B8E00680502 /* KSTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSTransitionUITests.m; sourceTree = "<group>"; };
+		1F7074811E5D6B8E00680502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F70748E1E5D70C900680502 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1F70748F1E5D70C900680502 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1F7074941E5D774C00680502 /* KSTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTransition.h; sourceTree = "<group>"; };
+		1F7074951E5D774C00680502 /* KSTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTransition.m; sourceTree = "<group>"; };
+		1F7074971E5D7FDA00680502 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1F7074981E5D7FDA00680502 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F7074541E5D6B8E00680502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F70746D1E5D6B8E00680502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7074781E5D6B8E00680502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F70744E1E5D6B8E00680502 = {
+			isa = PBXGroup;
+			children = (
+				1F7074591E5D6B8E00680502 /* KSTransition */,
+				1F7074731E5D6B8E00680502 /* KSTransitionTests */,
+				1F70747E1E5D6B8E00680502 /* KSTransitionUITests */,
+				1F7074581E5D6B8E00680502 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F7074581E5D6B8E00680502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F7074571E5D6B8E00680502 /* KSTransition.app */,
+				1F7074701E5D6B8E00680502 /* KSTransitionTests.xctest */,
+				1F70747B1E5D6B8E00680502 /* KSTransitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F7074591E5D6B8E00680502 /* KSTransition */ = {
+			isa = PBXGroup;
+			children = (
+				1F70748D1E5D6B9500680502 /* KSTransition */,
+				1F70745D1E5D6B8E00680502 /* AppDelegate.h */,
+				1F70745E1E5D6B8E00680502 /* AppDelegate.m */,
+				1F7074601E5D6B8E00680502 /* ViewController.h */,
+				1F7074611E5D6B8E00680502 /* ViewController.m */,
+				1F70748E1E5D70C900680502 /* SecondViewController.h */,
+				1F70748F1E5D70C900680502 /* SecondViewController.m */,
+				1F7074631E5D6B8E00680502 /* Main.storyboard */,
+				1F7074661E5D6B8E00680502 /* Assets.xcassets */,
+				1F7074681E5D6B8E00680502 /* LaunchScreen.storyboard */,
+				1F70746B1E5D6B8E00680502 /* Info.plist */,
+				1F70745A1E5D6B8E00680502 /* Supporting Files */,
+			);
+			path = KSTransition;
+			sourceTree = "<group>";
+		};
+		1F70745A1E5D6B8E00680502 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F70745B1E5D6B8E00680502 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F7074731E5D6B8E00680502 /* KSTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F7074741E5D6B8E00680502 /* KSTransitionTests.m */,
+				1F7074761E5D6B8E00680502 /* Info.plist */,
+			);
+			path = KSTransitionTests;
+			sourceTree = "<group>";
+		};
+		1F70747E1E5D6B8E00680502 /* KSTransitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F70747F1E5D6B8E00680502 /* KSTransitionUITests.m */,
+				1F7074811E5D6B8E00680502 /* Info.plist */,
+			);
+			path = KSTransitionUITests;
+			sourceTree = "<group>";
+		};
+		1F70748D1E5D6B9500680502 /* KSTransition */ = {
+			isa = PBXGroup;
+			children = (
+				1F7074941E5D774C00680502 /* KSTransition.h */,
+				1F7074951E5D774C00680502 /* KSTransition.m */,
+				1F7074971E5D7FDA00680502 /* UIView+Extension.h */,
+				1F7074981E5D7FDA00680502 /* UIView+Extension.m */,
+			);
+			name = KSTransition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F7074561E5D6B8E00680502 /* KSTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7074841E5D6B8E00680502 /* Build configuration list for PBXNativeTarget "KSTransition" */;
+			buildPhases = (
+				1F7074531E5D6B8E00680502 /* Sources */,
+				1F7074541E5D6B8E00680502 /* Frameworks */,
+				1F7074551E5D6B8E00680502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSTransition;
+			productName = KSTransition;
+			productReference = 1F7074571E5D6B8E00680502 /* KSTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F70746F1E5D6B8E00680502 /* KSTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7074871E5D6B8E00680502 /* Build configuration list for PBXNativeTarget "KSTransitionTests" */;
+			buildPhases = (
+				1F70746C1E5D6B8E00680502 /* Sources */,
+				1F70746D1E5D6B8E00680502 /* Frameworks */,
+				1F70746E1E5D6B8E00680502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F7074721E5D6B8E00680502 /* PBXTargetDependency */,
+			);
+			name = KSTransitionTests;
+			productName = KSTransitionTests;
+			productReference = 1F7074701E5D6B8E00680502 /* KSTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F70747A1E5D6B8E00680502 /* KSTransitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F70748A1E5D6B8E00680502 /* Build configuration list for PBXNativeTarget "KSTransitionUITests" */;
+			buildPhases = (
+				1F7074771E5D6B8E00680502 /* Sources */,
+				1F7074781E5D6B8E00680502 /* Frameworks */,
+				1F7074791E5D6B8E00680502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F70747D1E5D6B8E00680502 /* PBXTargetDependency */,
+			);
+			name = KSTransitionUITests;
+			productName = KSTransitionUITests;
+			productReference = 1F70747B1E5D6B8E00680502 /* KSTransitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F70744F1E5D6B8E00680502 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Bujiaxinxi;
+				TargetAttributes = {
+					1F7074561E5D6B8E00680502 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NGYJLGPAAV;
+						ProvisioningStyle = Automatic;
+					};
+					1F70746F1E5D6B8E00680502 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NGYJLGPAAV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F7074561E5D6B8E00680502;
+					};
+					1F70747A1E5D6B8E00680502 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NGYJLGPAAV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F7074561E5D6B8E00680502;
+					};
+				};
+			};
+			buildConfigurationList = 1F7074521E5D6B8E00680502 /* Build configuration list for PBXProject "KSTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F70744E1E5D6B8E00680502;
+			productRefGroup = 1F7074581E5D6B8E00680502 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F7074561E5D6B8E00680502 /* KSTransition */,
+				1F70746F1E5D6B8E00680502 /* KSTransitionTests */,
+				1F70747A1E5D6B8E00680502 /* KSTransitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F7074551E5D6B8E00680502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F70746A1E5D6B8E00680502 /* LaunchScreen.storyboard in Resources */,
+				1F7074671E5D6B8E00680502 /* Assets.xcassets in Resources */,
+				1F7074651E5D6B8E00680502 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F70746E1E5D6B8E00680502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7074791E5D6B8E00680502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F7074531E5D6B8E00680502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7074991E5D7FDA00680502 /* UIView+Extension.m in Sources */,
+				1F7074901E5D70C900680502 /* SecondViewController.m in Sources */,
+				1F7074961E5D774C00680502 /* KSTransition.m in Sources */,
+				1F7074621E5D6B8E00680502 /* ViewController.m in Sources */,
+				1F70745F1E5D6B8E00680502 /* AppDelegate.m in Sources */,
+				1F70745C1E5D6B8E00680502 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F70746C1E5D6B8E00680502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7074751E5D6B8E00680502 /* KSTransitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7074771E5D6B8E00680502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7074801E5D6B8E00680502 /* KSTransitionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F7074721E5D6B8E00680502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7074561E5D6B8E00680502 /* KSTransition */;
+			targetProxy = 1F7074711E5D6B8E00680502 /* PBXContainerItemProxy */;
+		};
+		1F70747D1E5D6B8E00680502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7074561E5D6B8E00680502 /* KSTransition */;
+			targetProxy = 1F70747C1E5D6B8E00680502 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F7074631E5D6B8E00680502 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7074641E5D6B8E00680502 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F7074681E5D6B8E00680502 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7074691E5D6B8E00680502 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F7074821E5D6B8E00680502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F7074831E5D6B8E00680502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F7074851E5D6B8E00680502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NGYJLGPAAV;
+				INFOPLIST_FILE = KSTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bujiaxinxi.KSTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F7074861E5D6B8E00680502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NGYJLGPAAV;
+				INFOPLIST_FILE = KSTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bujiaxinxi.KSTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F7074881E5D6B8E00680502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NGYJLGPAAV;
+				INFOPLIST_FILE = KSTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bujiaxinxi.KSTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KSTransition.app/KSTransition";
+			};
+			name = Debug;
+		};
+		1F7074891E5D6B8E00680502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NGYJLGPAAV;
+				INFOPLIST_FILE = KSTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bujiaxinxi.KSTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KSTransition.app/KSTransition";
+			};
+			name = Release;
+		};
+		1F70748B1E5D6B8E00680502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = NGYJLGPAAV;
+				INFOPLIST_FILE = KSTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bujiaxinxi.KSTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KSTransition;
+			};
+			name = Debug;
+		};
+		1F70748C1E5D6B8E00680502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = NGYJLGPAAV;
+				INFOPLIST_FILE = KSTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bujiaxinxi.KSTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KSTransition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F7074521E5D6B8E00680502 /* Build configuration list for PBXProject "KSTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7074821E5D6B8E00680502 /* Debug */,
+				1F7074831E5D6B8E00680502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7074841E5D6B8E00680502 /* Build configuration list for PBXNativeTarget "KSTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7074851E5D6B8E00680502 /* Debug */,
+				1F7074861E5D6B8E00680502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F7074871E5D6B8E00680502 /* Build configuration list for PBXNativeTarget "KSTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7074881E5D6B8E00680502 /* Debug */,
+				1F7074891E5D6B8E00680502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F70748A1E5D6B8E00680502 /* Build configuration list for PBXNativeTarget "KSTransitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F70748B1E5D6B8E00680502 /* Debug */,
+				1F70748C1E5D6B8E00680502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F70744F1E5D6B8E00680502 /* Project object */;
+}
