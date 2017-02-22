@@ -13,6 +13,15 @@
 @end
 
 @implementation SecondViewController
+/*
+ ** 最好在这里移除代理，防止内存泄漏
+ */
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    if (self.navigationController.delegate==self) {
+        self.navigationController.delegate = nil; 
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
